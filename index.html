@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced HTML5 Elements</title>
+</head>
+<body>
+
+  <section>
+    <h2>I. External Image</h2>
+    <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" alt="Developer working" width="600" />
+  </section>
+
+  <section>
+    <h2>II. Contact Table</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Alice Wanjiku</td><td>Nairobi</td><td>+254712345678</td><td>alice@example.com</td></tr>
+        <tr><td>Brian Otieno</td><td>Kisumu</td><td>+254722334455</td><td>brian@example.com</td></tr>
+        <tr><td>Caroline Njeri</td><td>Mombasa</td><td>+254733667788</td><td>caroline@example.com</td></tr>
+        <tr><td>David Mwangi</td><td>Nakuru</td><td>+254711223344</td><td>david@example.com</td></tr>
+        <tr><td>Esther Wekesa</td><td>Eldoret</td><td>+254799112233</td><td>esther@example.com</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>III. Registration Form</h2>
+    <form action="#" method="post">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="e.g. name@example.com" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Choose a strong password" required minlength="6" />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">Select your country</option>
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="tanzania">Tanzania</option>
+      </select>
+
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required />
+      <label for="female">Female</label>
+
+      <p>Skills:</p>
+      <input type="checkbox" id="html" name="skills" value="HTML" />
+      <label for="html">HTML</label>
+      <input type="checkbox" id="css" name="skills" value="CSS" />
+      <label for="css">CSS</label>
+      <input type="checkbox" id="js" name="skills" value="JavaScript" />
+      <label for="js">JavaScript</label>
+
+      <br /><br />
+      <input type="submit" value="Register" />
+    </form>
+  </section>
+
+  <section>
+    <h2>IV. Multimedia</h2>
+    <video width="600" controls>
+      <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <br /><br />
+
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+</body>
+</html>
